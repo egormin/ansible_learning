@@ -1,0 +1,7 @@
+[docker_servers]
+docker01.example.com
+docker02.example.com
+
+[docker_servers:vars]
+docker01.example.com ssh_port=2201 ssh_user=vasya
+docker02.example.com ssh_port=2202 ssh_user=vasya

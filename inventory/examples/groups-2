@@ -1,0 +1,11 @@
+[docker_servers]
+docker01.example.com
+docker02.example.com
+
+[web_servers]
+web01.example.com
+web02.example.com
+
+[app_domain:children]
+docker_servers
+web_servers
