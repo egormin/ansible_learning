@@ -1,0 +1,23 @@
+#########
+
+##### Simple host
+## 1)  Variant
+ansible.example.com
+
+## 2) Variant
+[docker_host1]
+docker01.example.com
+
+
+
+
+##### Group of hosts
+## 1)  Variant
+[docker_servers]
+docker01.example.com
+docker02.example.com
+
+## 2)  Variant
+[docker_domain:children]
+docker_host2
+docker_host2
