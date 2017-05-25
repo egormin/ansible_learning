@@ -1,0 +1,12 @@
+#########
+
+##### Simple host
+ansible.example.com
+
+
+##### Group of hosts
+[docker_servers]
+docker01.example.com
+docker02.example.com
+
+##### Group of hosts
