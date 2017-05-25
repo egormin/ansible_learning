@@ -1,2 +1,2 @@
 [docker_host1]
-docker01.example.com
+centos-host ansible_connection=ssh ansible_user=vagrant ansible_ssh_private_key_file=.vagrant/machines/centos7-host/virtualbox/private_key ansible_host=192.168.33.110

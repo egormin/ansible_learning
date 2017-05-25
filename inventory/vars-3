@@ -1,0 +1,13 @@
+[xxx]
+cos1 ansible_host=192.168.33.110 ansible_ssh_private_key_file=.vagrant/machines/centos7-host/virtualbox/private_key
+
+[yyy]
+deb ansible_host=192.168.33.120 ansible_ssh_private_key_file=.vagrant/machines/debian-host/virtualbox/private_key
+
+[zzz:children]
+xxx
+yyy
+
+[zzz:vars]
+ansible_connection=ssh
+ansible_user=vagrant
