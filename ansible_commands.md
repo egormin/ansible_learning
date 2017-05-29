@@ -3,11 +3,6 @@ Show ansible version
 ansible --version
 ```
 
-Show ansible version
-```
-ansible --version
-```
-
 Show different parametres of VM
 ```
 ansible tomcat_vm -i inventory -m setup   
