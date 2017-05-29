@@ -1,0 +1,12 @@
+- hosts: 
+  - centos
+  - debian
+
+  pre_tasks:
+  - shell: echo 'Start'
+
+  tasks:
+  - shell: echo 'Running'
+
+  post_tasks:
+  - shell: echo 'Finish'
