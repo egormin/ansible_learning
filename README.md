@@ -2,25 +2,41 @@
 
 <b>defaults</b>
 ```
-bla-bla
+Role default variables. Lowest priority.
+main.yml
 ```
 <b>files</b>
 ```
-bla-bla
+Role resources for “copy” module
+main.yml
 ```
 <b>handlers</b>
 ```
-bla-bla
+Role handlers
 ```
 <b>meta</b>
 ```
-bla-bla
+Role dependencies
 ```
 <b>tasks</b>
 ```
-bla-bla
+Role tasks
 ```
 <b>templates</b>
 ```
-bla-bla
+Role resources for “template” module
 ```
+<b>vars</b>
+```
+Role variables. Stronger priority then defaults
+```
+<b>library</b>
+```
+Modules
+```
+<b>tests</b>
+```
+Role unit tests
+```
+
+
