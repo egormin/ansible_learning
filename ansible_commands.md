@@ -10,7 +10,8 @@ ansible --version
 
 Show different parametres of VM
 ```
-ansible tomcat_vm -i inventory -m setup   ## tomcat_vm - may be host name, or host group name or name rgoup of groups
+ansible tomcat_vm -i inventory -m setup   
+## tomcat_vm - may be host name, or host group name or name rgoup of groups
 ```
 
 To launch playbook
