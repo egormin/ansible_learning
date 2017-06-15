@@ -4,6 +4,10 @@
 
   pre_tasks:
   - shell: echo 'Start'
+  
+  #roles:
+  #- java
+  #- tomcat
 
   tasks:
   - shell: echo 'Running'
