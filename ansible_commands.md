@@ -24,7 +24,7 @@ To check syntax
 ansible-playbook site.yml -i inventory --syntax-check
 ```
 
-DRY run
+Dry run
 ```
 ansible-playbook site.yml -i inventory --check
 ```
