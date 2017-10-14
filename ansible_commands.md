@@ -18,3 +18,13 @@ To launch playbook (verbose mode)
 ```
 ansible-playbook site.yml -i inventory -v
 ```
+
+To check syntax
+```
+ansible-playbook site.yml -i inventory --syntax-check
+```
+
+DRY run
+```
+ansible-playbook site.yml -i inventory --check
+```
