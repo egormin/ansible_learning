@@ -1,0 +1,20 @@
+- hosts: 
+  - localhost  # Will be performed on the local host
+
+  tasks:
+  - name: test
+    shell: for i in $(seq 1 10); do echo item = $i; done    
+
+  - name: test2          # This is the same
+    shell: 
+      for i in $(seq 1 10); 
+      do 
+        echo item = $i; 
+      done
+
+  - name: test3          # This is the same. We don't need use semicolumns in this case
+    shell: |
+      for i in $(seq 1 10)
+      do 
+        echo item = $i
+      done
