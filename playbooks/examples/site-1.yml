@@ -14,3 +14,9 @@
 
   post_tasks:
   - shell: echo 'Finish'
+  
+  ========================================
+  - hosts: all   # perform all tasks from root
+    become: yes
+    become_user: build  # perfom from some user
+  
