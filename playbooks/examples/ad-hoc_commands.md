@@ -36,3 +36,7 @@ equals as:
 ```
 ansible myhost -a "date; echo Hello World"
 ```
+Add user:
+```
+ansible all -m user -a "name=vasya comment='vasya petrov' group=users password=passwrd"
+```
