@@ -20,3 +20,19 @@ Get date of local host:
 ```
 ansible localhost -a date
 ```
+To put local file to remote host or group of hosts:
+```
+ansible first -m copy -a "src=ansible.cfg dest=/tmp" -i inventory
+```
+Install software on all hosts:
+```
+ansible all -m yum -a "name=mc state=present" --become -i inventory
+```
+Shell commands:
+```
+ansible myhost -m shell -a "date; echo Hello World"
+```
+equals as:
+```
+ansible myhost -a "date; echo Hello World"
+```
