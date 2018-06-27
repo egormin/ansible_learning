@@ -1,0 +1,31 @@
+- hosts:
+  - first
+
+  vars:
+  #string variables
+    str_var1: string1
+    str_var2: "string2"
+    str_var3: 'string3'
+
+  #numeric variables
+    num_var1: 2017
+    num_var2: 20.17
+
+  #boolean
+    bool_var1: True
+    bool_var2: false
+    bool_var3: yes
+    bool_var4: no
+
+  tasks:
+  - shell: echo {{str_var1}}
+  - shell: echo "{{str_var2}}"  # '' or "" or without doesn't matter
+  - shell: echo '{{ str_var3 }}'
+
+  - shell: echo {{ num_var1 }}
+  - shell: echo {{ num_var2 }}
+
+  - shell: echo {{ bool_var1 }}  # Will be True
+  - shell: echo {{ bool_var2 }}  # Will be False
+  - shell: echo {{ bool_var3 }}  # Will be True
+  - shell: echo {{ bool_var4 }}  # Will be False
