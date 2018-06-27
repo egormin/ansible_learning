@@ -4,7 +4,7 @@ Ansible has 3 main scopes:
 2. **Play** vars in playbooks, in role defaults and vars
 3. **Host**: inventory, include vars, facts
 
-####Vars priority (from low to high):
+#### Vars priority (from low to high):
 - role defaults
 - inventory file or script group vars (Variables defined in inventory file or provided by dynamic inventory)
 - inventory group_vars/all
