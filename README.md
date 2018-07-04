@@ -50,7 +50,7 @@ We should use "{{ var }}" after module or parameter name (after :). For example:
 - service
   - name: "{{ var }}"
 ```
-in order avoid consirering from ansible as it is yaml structure. In this case we don't need " ":
+in order avoid considering by ansible as it is yaml structure. In this case we don't need " ":
 ```
   tasks:
   - name: copy to {{ var }}
