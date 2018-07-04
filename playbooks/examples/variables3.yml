@@ -1,0 +1,27 @@
+- hosts:
+  - first
+
+  vars:
+    varfile1: somwhere.yml
+
+  vars_files:
+  - variablesfile.yml
+  - variablesfileDEV.yml
+  #- "{{ varfile1 }}"    Also we can define file with variables as variable
+
+  tasks:
+  - debug: var=simple
+
+  - debug: var=myDict
+  - debug: var=myDict.key1
+  - debug: var=myDict.key3 # simple
+  - debug: var=myDict.key4 # value
+
+  - debug: var=myDict2.k1
+
+  - debug: var=myList1
+  - debug: var=myList1[0]
+
+  - debug: var=myList2
+  - debug: var=myList2[1]
+
