@@ -30,3 +30,8 @@ Ansible has 3 main scopes:
 - include params
 - extra vars (always win precedence)
 
+### To summarize:
+- ansible-playbook input param
+- variables from vars file
+- variables from vars in playbook
+- inventory file variables
