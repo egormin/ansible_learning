@@ -1,0 +1,15 @@
+simple: value
+
+myDict:
+  key1: first
+  key2: second
+  key3: simple
+  key4: "{{ simple }}"
+
+myDict2: {k1: k1_value, k2: k2_value}
+
+myList1:
+- list_value_1
+- list_value_2
+
+myList2: ["list2_value_1", "list2_value_2"]
