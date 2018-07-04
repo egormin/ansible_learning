@@ -1,0 +1,26 @@
+- hosts:
+  - first
+
+  vars:
+  # Dictionaries
+    myDict:
+      v2.7: 'http://python.org/v2.7/download'
+      v3.2: 'http://python.org/v3.2/download'
+      latest: 'http://python.org/v3.6/download'
+  # Lists
+    plugins:
+      - role-strategy
+      - github-plugin
+      - rebuild
+
+
+  tasks:
+  #- debug: var=myDict.v2.7  This doesn't work
+  - debug: var=myDict.latest
+  - debug: var=myDict['v2.7']
+  - debug: msg={{ myDict['v2.7'] }}
+  - debug: var=plugins
+
+  # Difference between var and message in debug is:
+  #   when we use var we can call it directly
+  #   when we use msg variable should be in {{ }} because it is inside the message
