@@ -40,3 +40,7 @@ Add user:
 ```
 ansible all -m user -a "name=vasya comment='vasya petrov' group=users password=passwrd"
 ```
+Put ssh key to remote hosts:
+```
+ansible first -m copy -a "src=~/.ssh/id_rsa.pub dest=~/.ssh/authorized_keys" -i inventory
+```
