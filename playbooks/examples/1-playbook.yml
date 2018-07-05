@@ -1,0 +1,24 @@
+- hosts: DEV
+
+  tasks:
+  - yum:
+      name=epel-release  # We can write as here
+    become: yes
+
+  - yum: name=python-pip # Or as here
+    become: yes
+
+  - pip: name=ansible
+    become: yes
+
+  - shell: ansible --version
+
+  - yum: name=httpd
+    become: yes
+
+  - service: name=httpd state=started enabled=true
+    become: yes
+
+  - debug: msg="HTTPD service installed. Please visit {{ ansible_fqdn }}"
+
+  - debug: var=ansible_default_ipv4.address
