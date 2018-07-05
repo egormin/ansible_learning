@@ -21,5 +21,6 @@ ansible_distribution_version: "7.5.1804"
 ***Default IPv4 address:***
 ```
 ansible_default_ipv4.address: "10.0.2.15"
+To use:
 - debug: var=ansible_default_ipv4.address
 ```
