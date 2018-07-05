@@ -28,3 +28,7 @@ Dry run
 ```
 ansible-playbook site.yml -i inventory --check
 ```
+Start without password. We can define only user name in inventory `ansible_ssh_user=vagrant` and ansible will ask the password if we use the key `-k`:
+```
+ansible-playbook site.yml -i inventory -k
+```
