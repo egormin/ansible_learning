@@ -55,4 +55,7 @@ in order avoid considering by ansible as it is yaml structure. In this case we d
   tasks:
   - name: copy to {{ var }}
 ```
+### playbook.retry:
+This file contains hostname of host where occurs last fail
+
 
