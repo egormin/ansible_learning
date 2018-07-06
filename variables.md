@@ -35,3 +35,9 @@ Ansible has 3 main scopes:
 - variables from vars file
 - variables from vars in playbook
 - inventory file variables
+
+### Variables in inventory files (from low to high):
+- all group
+- parent group
+- child group
+- host variable
