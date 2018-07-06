@@ -1,2 +1,2 @@
  Also is available such inventory option:
-![inventory](pic/inventory.png)
+![inventory](pic/inventory.PNG)
