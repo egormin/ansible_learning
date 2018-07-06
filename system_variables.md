@@ -24,3 +24,20 @@ ansible_default_ipv4.address: "10.0.2.15"
 To use:
 - debug: var=ansible_default_ipv4.address
 ```
+***Hostname from inventory file:***
+```
+ansible_nodename: "first"
+```
+***Get list of hosts in group:***
+```
+{{groups['DEV']}}
+```
+***Get host vars:***
+```
+{{hostvars['hostname']}}
+```
+***Get IP of the first host of group:***
+```
+{{hostvars[groups['DEV'][0]]['ansible_eth0']['ipv4']['address']}}
+{{hostvars[groups['DEV'][0]].ansible_eth0.ipv4.address}}
+```
