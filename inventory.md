@@ -41,6 +41,10 @@ Run only on hosts wich are in first group and in second group simultaneously:
 ```
  - hosts: webservers:&staging
 ```
+So the common rule is:
+```
+webservers:{{extended}}:!{{excluded}}:&{{required}}
+```
   
  Also is available such inventory option:
 ![inventory](pic/inventory.PNG)
