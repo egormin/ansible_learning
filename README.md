@@ -57,6 +57,11 @@ roles:
 - common                 
 - { role: tomcat_install, app_port: 9000, app_dir: '/opt'}
 ```
+### Sequence of performing:
+1. pre_tasks
+2. all roles   # can be defined in any place of play book it doesnt change the sequence
+3. pre_tasks
+3. post_tasks
 
 ### Remark:
 We should use "{{ var }}" after module or parameter name (after :). For example:
