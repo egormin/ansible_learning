@@ -89,7 +89,7 @@ dependencies:
   
   vars_files:
   
-  environment:
+  environment:  # for example JAVA_HOME, PATH
   
   pre_tasks:
   
