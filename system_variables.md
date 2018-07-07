@@ -67,3 +67,7 @@ ansible_service_mgr: "systemd"
 {{hostvars[groups['DEV'][0]]['ansible_eth0']['ipv4']['address']}}
 {{hostvars[groups['DEV'][0]].ansible_eth0.ipv4.address}}
 ```
+### Filtering facts
+```
+ansible -m setup -i inventory first -a filter="ansible_service_mgr"
+```
