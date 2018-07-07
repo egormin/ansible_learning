@@ -1,0 +1,6 @@
+- name: Deploy Full Stack
+  hosts: APP
+
+  roles:
+  - { role: nginx }
+  - { role: tomcat, tomcat_release: 8.5.32 }
