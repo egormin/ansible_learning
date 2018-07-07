@@ -41,3 +41,12 @@ Ansible has 3 main scopes:
 - parent group
 - child group
 - host variable
+
+### Variables in command line:
+```
+ansible-playbook -e somevar=somevalue
+ansible-playbook -e "somevar1=somevalue1 somevar2=somevalue2"
+ansible-playbook --extra-vars=@vars.yml
+ansible-playbook --extra-vars=@vars.json
+ansible-playbook -e "{'somevar1':'somevalue1', 'somevar2':'somevalue2'}"
+```
