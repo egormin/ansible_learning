@@ -87,3 +87,4 @@ or
 tasks:
 - debug: var=ansible_local.preferences.general.eg
 ```
+It can be ini, json, script (output of script should be json) files.
