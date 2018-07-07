@@ -75,7 +75,7 @@ dependencies:
 ### Play structure:
 ```
 - name: Play name
-  hosts: host or group
+  hosts: host or group         # only this one is mandatory
   connection: connection type
   
   gather_facts: yes_or_no
