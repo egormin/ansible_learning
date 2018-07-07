@@ -85,5 +85,5 @@ ansible -m setup -i inventory first -a filter="ansible_local"
 or
 ```
 tasks:
-- debug: var=ansible_local.preferences.eg
+- debug: var=ansible_local.preferences.general.eg
 ```
