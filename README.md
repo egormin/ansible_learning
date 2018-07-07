@@ -43,6 +43,20 @@ Role unit tests
 inventory
 test.yml
 ```
+### Roles parameters:
+```
+roles:
+- common                  # without parameters
+- role: tomcat_install    # with parameters
+  app_port: 9000
+  app_dir: '/opt'
+```
+or we can write:
+```
+roles:
+- common                 
+- { role: tomcat_install, app_port: 9000, app_dir: '/opt'}
+```
 
 ### Remark:
 We should use "{{ var }}" after module or parameter name (after :). For example:
