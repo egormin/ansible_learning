@@ -71,3 +71,14 @@ ansible_service_mgr: "systemd"
 ```
 ansible -m setup -i inventory first -a filter="ansible_service_mgr"
 ```
+### Create own facts:
+Create file `/etc/ansible/facts.d/preferences.fact` with content:
+```
+[general]
+eg=1
+megatomcat='/opt/apache/tomcat'
+```
+To see our facts:
+```
+ansible -m setup -i inventory first -a filter="ansible_local"
+```
