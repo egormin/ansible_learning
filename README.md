@@ -63,6 +63,15 @@ roles:
 3. pre_tasks
 3. post_tasks
 
+### Roles dependencies:
+We can define the roles which should be perform before some role. We can write next code in `meta/main.yml`:
+```
+dependencies:
+- common
+- {role: apache, apache_port: 80}
+- {role: postgres, dbname: clients, other_param: 12}
+```
+
 ### Remark:
 We should use "{{ var }}" after module or parameter name (after :). For example:
 ```
