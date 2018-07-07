@@ -72,6 +72,36 @@ dependencies:
 - {role: postgres, dbname: clients, other_param: 12}
 ```
 
+### Play structure:
+```
+- name: Play name
+  hosts: host or group
+  connection: connection type
+  
+  gather_facts: yes_or_no
+  gather_timeout: timeout
+  
+  strategy:
+  serial:
+  max_fail_percentage:
+  
+  vars:
+  
+  vars_files:
+  
+  environment:
+  
+  pre_tasks:
+  
+  roles:
+  
+  tasks:
+  
+  post_tasks:
+  
+  handlers:  
+  ```
+
 ### Remark:
 We should use "{{ var }}" after module or parameter name (after :). For example:
 ```
