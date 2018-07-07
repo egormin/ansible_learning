@@ -50,3 +50,12 @@ ansible-playbook --extra-vars=@vars.yml
 ansible-playbook --extra-vars=@vars.json
 ansible-playbook -e "{'somevar1':'somevalue1', 'somevar2':'somevalue2'}"
 ```
+### GET environment variables value:
+```
+  tasks:
+  - name: 'Show facts'
+    debug: msg="{{ ansible_env['HOME'] }}"   # On remote (managed) node
+
+  - name: 'Show facts'
+    debug: msg="{{ lookup('env', 'HOME') }}" # On control machine
+ ```
