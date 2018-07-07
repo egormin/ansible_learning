@@ -28,6 +28,32 @@ To use:
 ```
 ansible_nodename: "first"
 ```
+***Hostname:***
+```
+ansible_hostname: "first"
+```
+***Kernel version:***
+```
+ansible_kernel: "3.10.0-862.2.3.el7.x86_64"
+```
+***Total RAM amount:***
+```
+ansible_memory_mb.real.total: "512"
+```
+***OS family:***
+```
+ansible_os_family: "RedHat"
+```
+***Packet manager:***
+```
+ansible_pkg_mgr: "yum"
+```
+***Service manager:***
+```
+ansible_service_mgr: "systemd"
+```
+
+
 ***Get list of hosts in group:***
 ```
 {{groups['DEV']}}
